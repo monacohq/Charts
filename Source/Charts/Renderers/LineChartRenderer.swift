@@ -834,8 +834,7 @@ open class LineChartRenderer: LineRadarRenderer
             return
         }
 
-        let drawHorizontally: Bool = true
-//        let centerY = (boundingBox.maxY - boundingBox.minY) / 2
+        let drawHorizontally = dataSet.drawHorizontalGradientEnabled
         let startingX = drawHorizontally ? boundingBox.minX : 0
         let startingY = drawHorizontally ? 0 : boundingBox.minY
         let endingX = drawHorizontally ? boundingBox.maxX : 0
